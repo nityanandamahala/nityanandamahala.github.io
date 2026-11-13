@@ -458,10 +458,6 @@ footer{background:#07141d;color:#8196a5;text-align:center;padding:22px;font-size
   const submit = document.getElementById("contact-submit");
   form.addEventListener("submit", async function (event) {
     event.preventDefault();
-    if (EMAILJS_PUBLIC_KEY === "kdyv2oIO4VMS3Qt8w") {
-      status.textContent = "Contact form setup is almost complete. Please try again shortly.";
-      return;
-    }
     submit.disabled = true;
     submit.textContent = "Sending...";
     status.textContent = "";
